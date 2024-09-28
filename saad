@@ -1,0 +1,305 @@
+<!-- #1c6747 -->
+<!-- ff0101 -->
+<!-- #088F8F -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRS EnterPrises</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="Assets/images/m.r.s enterpeises.png">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li a {
+        display: inline;
+        text-decoration: none;
+        color: white;
+    }
+
+    li {
+        display: inline;
+        margin-left: 5%;
+    }
+
+    nav {
+        animation: navbar 1s ease-in;
+        text-align: center;
+        padding: 1% 1%;
+        background-color: #ff0101;
+    }
+
+    ul {
+        display: inline;
+        text-align: center;
+    }
+
+    @keyframes navbar {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes navbarfont {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    li a {
+        animation: navbarfont 1s ease-in;
+        font-family: EB Garamond;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        transition: 1s;
+    }
+
+    li a:hover {
+        padding: 10px 22px;
+        transition: 1s;
+        border: 5px solid white;
+        background-color: #088f8f;
+        border-radius: 10px;
+    }
+
+    .heading {
+        font-family: pacifico;
+        text-align: start;
+        display: inline;
+        margin: 0;
+        padding-left: 1%;
+        font-size: 30px;
+        color: whitesmoke;
+        filter: drop-shadow(10px 10px 10px black);
+    }
+
+    header {
+        background-color: #088f8f;
+        height: 90vh;
+    }
+
+    @keyframes hero {
+        0% {
+            transform: translateX(0px) translateY(100px);
+        }
+
+        20% {
+            transform: translateX(50px) translateY(0) rotate(10deg);
+        }
+
+        40% {
+            transform: translateX(250px) translateY(100px) rotate(40deg);
+        }
+
+        60% {
+            transform: translateX(500px) translateY(0px) rotate(60deg);
+
+        }
+
+        80% {
+
+            transform: translateX(750px) translateY(100px) rotate(80deg);
+        }
+
+        100% {
+            transform: translateX(1000px) translateY(0px) rotate(100deg);
+
+        }
+    }
+
+    .hero {
+
+        position: absolute;
+
+        animation: hero 10s infinite ease-in-out;
+    }
+
+    .cross {
+        position: absolute;
+        z-index: 1;
+        animation: cross 2s infinite ease-in-out;
+        width: 5vw;
+        opacity: 0.6;
+    }
+
+    @keyframes cross {
+        0% {
+            opacity: .8;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: .8;
+        }
+    }
+
+    .line {
+        position: absolute;
+        z-index: 1;
+        animation: line 200ms infinite ease-in-out;
+        animation-timing-function: calc(2*100);
+        left: 50%;
+        top: 7%;
+
+        opacity: 0.6;
+    }
+
+    .hero2 {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        transform: rotate(10deg);
+        animation: hero2 5s infinite;
+    }
+
+    @keyframes hero2 {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(50px);
+        }
+
+        100% {
+            transform: translateY(-50px);
+        }
+
+        1% {
+            transform: translateY(0px);
+
+        }
+    }
+
+    .container {
+        margin-top: 10%;
+        max-width: 80%;
+    }
+
+    .brand_name {
+        margin-bottom: 2%;
+        color: white;
+        font-size: 45px;
+        position: relative;
+        top: 30%;
+        left: 10%;
+        letter-spacing: 5px;
+        animation: brand_name 2s;
+    }
+
+    @keyframes brand_name {
+        from {
+            transform: translateX(-200px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+    .brand_info{
+        color: white;
+        font-family: pacifico;
+        animation: brand_info 3s;
+        filter: drop-shadow(10px 10px 10px black);
+        font-size: 20px;
+        text-align: start;
+        max-width: 40%;
+        margin-left: 10%;
+    }
+    @keyframes brand_info{
+        from{
+            filter:  opacity(0) drop-shadow(10px 10px 10px black);
+        }
+        to{
+            filter: opacity(1) drop-shadow(10px 10px 10px black);
+            
+        }
+    }
+    .brand_img{
+        animation: brand_img 3s;
+        border-radius: 10px;
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        max-height: 50vh;
+        transform: skewY(10deg);
+    }
+    .brand_img:hover{
+        transform: skewY(2deg);
+        filter: brightness(60%);
+        transition: 1s;
+    }
+    @keyframes brand_img{
+from{
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="heading">
+                M.R.S Enterprises
+            </div>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+        </nav>
+        <img src="Assets/images/hero-dot-2.png" alt="" class="hero2">
+        <img src="Assets/images/cross.png" alt="" class="cross">
+        <img src="Assets/images/hero-dot-2.png" class="hero">
+        <div class="container">
+            <h1 class="brand_name">
+                M.R.S EnterPrises
+            </h1>
+          <img src="Assets/images/img1.jpg" alt="" class="brand_img">
+            <p class="brand_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea perspiciatis,
+                debitis excepturi voluptatibus consequatur rem? Maxime odit debitis magni error nesciunt? Eius possimus
+                facere unde suscipit excepturi, tempore necessitatibus?Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. am? Eos repudiandae ducimus pariatur fugiat maxime! Itaque rerum voluptate maxime!</p>
+        </div>
+    </header>
+
+</body>
+<style>
+
+</style>
+
+</html>
